@@ -5,5 +5,9 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 'Matthew','Ella','Aiden','Madison','Henry','Scarlett','Joseph','Victoria','Jackson','Aria',
 'Samuel','Grace','Sebastian','Chloe','David','Camila','Carter','Penelope','Wyatt','Riley']
 
-
 #Your code go here:
+def filter_names(names, string):
+    return [name for name in names if string.lower() in name.lower()]
+
+filtered_names = filter_names(names, 'am')
+print(filtered_names)
